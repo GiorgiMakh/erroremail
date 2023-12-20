@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 
-function errormail(service, email, pass, toemail) {
+function erroremail(service, email, pass, toemail) {
   if(!service||!email||!pass||!toemail) throw new Error('Errormail: Not Valid Parameters');
 
   const transporter = nodemailer.createTransport({
@@ -104,4 +104,4 @@ function errormail(service, email, pass, toemail) {
   }
 }
 
-module.exports = errormail;
+module.exports = erroremail;
