@@ -4,7 +4,6 @@
   "description": "Express middleware which logs error and send to email",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,17 +13,18 @@
   "keywords": [
     "Express",
     "Middleware",
+    "expressmiddleware",
     "middleware",
     "errorhandler",
     "error"
   ],
   "author": "@GiorgiMakh",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/GiorgiMakh/erroremail/issues"
   },
   "homepage": "https://github.com/GiorgiMakh/erroremail#readme",
   "dependencies": {
-    "nodemailer": "^6.9.7"
+    "nodemailer": "6.9.7"
   }
 }
