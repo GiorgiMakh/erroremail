@@ -1,30 +1,31 @@
 {
   "name": "erroremail",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Express middleware which logs error and send to email",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GiorgiMakh/erroremail.git"
+  "dependencies": {
+    "nodemailer": "^6.9.7"
   },
+  "author": "@GiorgiMakh",
+  "license": "MIT",
   "keywords": [
     "Express",
     "Middleware",
     "expressmiddleware",
     "middleware",
+    "report",
     "errorhandler",
     "error"
   ],
-  "author": "@GiorgiMakh",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiorgiMakh/erroremail.git"
+  },
   "bugs": {
     "url": "https://github.com/GiorgiMakh/erroremail/issues"
   },
-  "homepage": "https://github.com/GiorgiMakh/erroremail#readme",
-  "dependencies": {
-    "nodemailer": "6.9.7"
-  }
+  "homepage": "https://github.com/GiorgiMakh/erroremail#readme"
 }

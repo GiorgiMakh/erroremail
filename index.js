@@ -1,7 +1,7 @@
 const nodemailer = require('nodemailer');
 
-function erroremail(service, email, pass, toemail) {
-  if(!service||!email||!pass||!toemail) throw new Error('Errormail: Not Valid Parameters');
+function erroremail(service, email, pass, toemail=email) {
+  if(!service||!email||!pass) throw new Error('Errormail: Not Valid Parameters');
 
   const transporter = nodemailer.createTransport({
     service: service,
@@ -77,7 +77,7 @@ function erroremail(service, email, pass, toemail) {
         <div id="error">${err.stack.toString()}</div>
         <p>Good luck !</p>
         <footer>
-          <a href="https://github.com/GiorgiMakh/erroremail"><img width="32" height="32" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"></img></a>   
+          <a target='_blank' href="https://github.com/GiorgiMakh/erroremail"><img width="32" height="32" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"></img></a>   
         </footer>
       </div>
     </body>

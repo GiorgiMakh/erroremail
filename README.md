@@ -3,12 +3,12 @@
 Middleware which logs error and sends to email.
 
 ## Prerequisite
-- [Node.js](https://nodejs.org/en/) on your platform
-- Setup Gmail for [app](https://support.google.com/mail/answer/185833?hl=en#) authorization
+- [Node.js](https://nodejs.org/en/){:target="_blank"} on your platform
+- Setup Gmail for [app](https://support.google.com/mail/answer/185833?hl=en#){:target="_blank"} authorization
 
 ## Installation
 
-```sh
+```bash
 npm install erroremail --save-dev
 ```
 
@@ -27,7 +27,19 @@ app.get('/example', (req, res, next)=>{
 });
 
 // Error Handler Middleware
-app.use(erroremail('Gmail','Your@gmail.com','Gmail App Password','To_mail@gmail.com'));
+app.use(erroremail('Gmail', 'Your@gmail.com', 'Gmail App Password'));
+```
+
+## Single target email address example
+
+```js
+app.use(erroremail('Gmail', 'Your@gmail.com', 'Gmail App Password', 'Tomail@gmail.com'));
+```
+
+## Multiple emails example
+
+```js
+app.use(erroremail('Gmail', 'Your@gmail.com', 'Gmail App Password', ['Tomail@gmail.com', 'Tomail@gmail.com']));
 ```
 
 ## License
