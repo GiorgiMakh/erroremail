@@ -3,8 +3,8 @@
 Middleware which logs error and sends to email.
 
 ## Prerequisite
-- [Node.js](https://nodejs.org/en/){:target="_blank"} on your platform
-- Setup Gmail for [app](https://support.google.com/mail/answer/185833?hl=en#){:target="_blank"} authorization
+- [Node.js](https://nodejs.org/en/) on your platform
+- Setup Gmail for [app](https://support.google.com/mail/answer/185833?hl=en#) authorization
 
 ## Installation
 
