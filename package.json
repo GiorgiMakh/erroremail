@@ -1,6 +1,6 @@
 {
   "name": "erroremail",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Express middleware which logs error and send to email",
   "main": "index.js",
   "scripts": {
@@ -27,5 +27,13 @@
   "bugs": {
     "url": "https://github.com/GiorgiMakh/erroremail/issues"
   },
-  "homepage": "https://github.com/GiorgiMakh/erroremail#readme"
+  "homepage": "https://github.com/GiorgiMakh/erroremail#readme",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js"
+  ],
+  "engines": {
+    "node": ">= 6.0.0"
+  }
 }
